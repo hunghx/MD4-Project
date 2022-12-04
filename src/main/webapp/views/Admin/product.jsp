@@ -23,6 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
 </head>
 
 <body>
@@ -269,7 +270,7 @@
 
                                 <form class="d-flex" role="search" action="<%=request.getContextPath()%>/ProductServlet">
                                     <input class="form-control me-2 fst-italic" type="text"
-                                           placeholder="Enter category's name... "
+                                           placeholder="Enter product's name... "
                                            aria-label="Search" name="searchName">
                                     <input class="btn btn-outline-success" type="submit" value="Search" name="action"/>
                                 </form>
@@ -296,106 +297,19 @@
                             <c:forEach items="${listProduct}" var="pro">
                                 <tr>
                                     <td>${pro.productId}</td>
-                                    <td><a href="<%=request.getContextPath()%>/ProductServlet?action=GetById&&productId=${pro.productId}">${pro.productName}</a></td>
+                                    <td><a href="<%=request.getContextPath()%>/ProductServlet?action=GetById&&productId=${pro.productId}" style="text-decoration: none; color: black">${pro.productName}</a></td>
                                     <td>${pro.titleProduct}</td>
                                     <td>${pro.productDescriptions}</td>
                                     <td><img style="width: 100px; height: 100px" src="<%=request.getContextPath()%>/imagesPro/${pro.productImage}" alt=""></td>
-                                    <td>${pro.catalogId}</td>
+                                    <td>${pro.catalogName}</td>
                                     <td>${pro.createDate}</td>
                                     <td>${pro.productStatus?"Hoạt động":"Không hoạt động"}</td>
                                     <td>
                                         <input type="hidden" id="pro" value="${pro.productId}">
-                                            <%--                                        <a type="button" href="#updateCatalogModal" class="update" data-bs-toggle="modal"></a>--%>
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                                data-bs-target="#updateProModal" data-bs-whatever="${pro.productId}" id="updatePro">Update
-                                        </button>
 
-                                            <%---------------------------------modal update-------------------------------%>
-                                        <div class="modal fade" id="updateProModal" tabindex="-1"
-                                             aria-labelledby="updateProLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="updateProLabel">Update
-                                                            product</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"></button>
-                                                    </div>
-                                                    <form action="<%=request.getContextPath()%>/ProductServlet" method="post">
-                                                        <div class="modal-body">
-                                                            <div class="input-group mb-3">
-                                                                <span class="input-group-text" >Mã danh mục</span>
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="Nhập mã danh mục"
-                                                                       aria-label="catalogName"
-                                                                       aria-describedby="basic-addon1"
-                                                                       name="catIdUpdate" id="catalogIdUpdate" readonly>
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                                <span class="input-group-text" >Tên danh mục</span>
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="Nhập tên danh mục"
-                                                                       aria-label="catalogName"
-                                                                       aria-describedby="basic-addon1"
-                                                                       name="catName" id="catalogNameUpdate">
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                    <span class="input-group-text"
-                                                    >Mô tả danh mục</span>
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="Nhập mô tả danh mục"
-                                                                       aria-label="catalogDescription"
-                                                                       aria-describedby="basic-addon2"
-                                                                       name="catDescription" id="catalogDescriptionUpdate">
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                                <label class="input-group-text" for="catalogParent">Danh
-                                                                    mục
-                                                                    cha</label>
-                                                                <select class="form-select" id="catalogParentUpdate"
-                                                                        name="catPaId">
-                                                                    <option value="0" selected>Choose...</option>
-                                                                    <c:forEach items="${listCatalog}" var="catCombo">
-                                                                        <option value="${catCombo.catalogId}"
-                                                                                name="catPaId">${catCombo.catalogName}</option>
-                                                                    </c:forEach>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                    <span class="input-group-text"
-                                                          id="catalogStatusUpdate">Trạng thái danh mục</span>
-                                                            </div>
-                                                            <c:choose>
-                                                                <c:when test="${cat.catalogStatus}">
-                                                                    <input type="radio" name="catStatus" id="active" value="true" checked/>
-                                                                    <label for="active">Hoạt động</label>
-                                                                    <input type="radio" name="catStatus" id="inactive" value="false"/>
-                                                                    <label for="inactive">Không hoạt động</label>
-                                                                </c:when>
-                                                                <c:otherwise>
-                                                                    <input type="radio" name="catStatus" id="active" value="true"/>
-                                                                    <label for="active">Hoạt động</label>
-                                                                    <input type="radio" name="catStatus" id="inactive" value="false" checked/>
-                                                                    <label for="inactive">Không hoạt động</label>
-                                                                </c:otherwise>
-                                                            </c:choose>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">
-                                                                Close
-                                                            </button>
-                                                            <input type="submit" name="action" value="Update"
-                                                                   class="btn btn-primary"/>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                            <%--                                                -------------------------modal delete---------------------------------%>
                                         <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal" id="deleteCat"
-                                                data-bs-whatever="${cat.catalogName}">Delete
+                                                data-bs-target="#exampleModal" id="deleteProduct"
+                                                data-bs-whatever="${pro.productName}"><i class="bi bi-trash3"></i>
                                         </button>
                                         <div class="modal fade" id="exampleModal" tabindex="-1"
                                              aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -406,7 +320,7 @@
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                                 aria-label="Close"></button>
                                                     </div>
-                                                    <form action="<%=request.getContextPath()%>/CatalogServlet">
+                                                    <form action="<%=request.getContextPath()%>/ProductServlet">
                                                         <div class="modal-body">
                                                             <div class="mb-3">
                                                                 <input type="text" class="form-control"
@@ -419,7 +333,7 @@
                                                             </button>
                                                             <input type="submit" class="btn btn-danger" value="Delete"
                                                                    name="action"/>
-                                                            <input type="hidden" name="catDelId" id="catDelId">
+                                                            <input type="hidden" name="proDelId" id="proDelId">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -706,6 +620,32 @@
     });
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).on('click', 'table #deleteProduct', function () {
+        let proId = $(this).parent().find('#pro').val();
+        $('#proDelId').val(proId);
+    });
+</script>
+
+<script>
+    var exampleModal = document.getElementById('exampleModal')
+    exampleModal.addEventListener('show.bs.modal', function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        var recipient = button.getAttribute('data-bs-whatever')
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        var modalTitle = exampleModal.querySelector('.modal-title')
+        var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+        modalTitle.textContent = 'Xóa ' + recipient
+        modalBodyInput.value = 'Bạn chắc chắn muốn xóa sản phảm ' + recipient + '?'
+    })
+</script>
 </body>
 
 </html>

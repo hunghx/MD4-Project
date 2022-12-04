@@ -62,6 +62,10 @@ public class UserServlet extends HttpServlet {
             } else {
                 request.getRequestDispatcher("views/User/home.jsp").forward(request, response);
             }
+        } else if (action!=null && action.equals("logout")) {
+//            request.getSession().getAttribute("userLogin");
+            request.getSession().invalidate();
+            request.getRequestDispatcher("views/User/home.jsp").forward(request, response);
         }
     }
 }

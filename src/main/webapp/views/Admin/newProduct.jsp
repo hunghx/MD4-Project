@@ -43,7 +43,7 @@
                         <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Dashboard</span>
                     </a>
                 </li>
-                <li class="sidebar-item active">
+                <li class="sidebar-item ">
                     <a class="sidebar-link" href="<%=request.getContextPath()%>/CatalogServlet">
                         <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Category</span>
                     </a>
@@ -58,7 +58,7 @@
                         <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Color</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item active">
                     <a class="sidebar-link" href="<%=request.getContextPath()%>/ProductServlet">
                         <i class="align-middle" data-feather="square"></i> <span class="align-middle">Product</span>
                     </a>

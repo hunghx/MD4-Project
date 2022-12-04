@@ -8,4 +8,7 @@ public interface IProductDAO<T,V> extends IShopDAO<T,V>{
     List<T> searchByName(String searchName);
     boolean insertProductDetail(int proId, List<ProductDetail> list);
     int getLatestId();
+    boolean updateProDuctDetail( ProductDetail pdetail);
+    T searchProductDetail(int id, String name);
+
 }

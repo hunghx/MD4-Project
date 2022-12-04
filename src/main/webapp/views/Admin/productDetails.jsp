@@ -43,7 +43,7 @@
             <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Dashboard</span>
           </a>
         </li>
-        <li class="sidebar-item active">
+        <li class="sidebar-item ">
           <a class="sidebar-link" href="<%=request.getContextPath()%>/CatalogServlet">
             <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Category</span>
           </a>
@@ -58,7 +58,7 @@
             <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Color</span>
           </a>
         </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item active">
           <a class="sidebar-link" href="<%=request.getContextPath()%>/ProductServlet">
             <i class="align-middle" data-feather="square"></i> <span class="align-middle">Product</span>
           </a>
@@ -263,10 +263,11 @@
 
     <main class="content">
   <div class="classifiedList">
-    <h1>${product.productName} <input type="hidden" name="productId" value="${productId}"></h1>
+    <h1>${product.productName} </h1>
     <h3>Danh sách phân loại hàng</h3>
     <div>
       <form action="<%=request.getContextPath()%>/ProductServlet" method="post">
+        <input type="hidden" name="productId" value="${productId}">
         <table class="table ">
           <tr>
             <th>Color</th>
@@ -298,7 +299,7 @@
           </c:forEach>
         </table>
         <div class="confirm">
-          <button type="submit" class="btn btn-secondary" name="action" value="cencalCreateProduct">Hủy</button>
+          <button type="button">Hủy</button>
           <button type="submit" class="btn btn-primary" name="action" value="createProductDetail">Thêm sản phẩm</button>
         </div>
       </form>

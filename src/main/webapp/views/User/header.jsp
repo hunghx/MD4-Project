@@ -104,8 +104,9 @@
                                 <li class="hidden-xs"><a href="<%=request.getContextPath()%>/views/User/wishlistPro.jsp">Wishlist</a></li>
                                 <li class="hidden-xs"><a href="<%=request.getContextPath()%>/views/User/cartPro.jsp">My Cart</a></li>
                                 <li class="hidden-xs"><a href="<%=request.getContextPath()%>/views/User/checkout.jsp">Checkout</a></li>
-                                <li><a href="<%=request.getContextPath()%>/views/User/register.jsp">Register</a></li>
-                                <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                                <li><a style="display: ${sessionScope.userLogin!=null?'none':''} " href="<%=request.getContextPath()%>/views/User/register.jsp">Register</a></li>
+                                <li><a style="display: ${sessionScope.userLogin!=null?'none':''}" href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                                <li><a style="display: ${sessionScope.userLogin!=null?'':'none'}" href="" data-toggle="modal" data-target="#logout-modal">Xin chào ${sessionScope.userLogin.fullName} </a></li>
                             </ul>
                         </div>
                     </div>

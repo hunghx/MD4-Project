@@ -10,6 +10,7 @@ public class Product {
     private String titleProduct;
     private String productDescriptions;
     private int catalogId;
+    private String catalogName;
     private boolean productStatus;
     private Date createDate;
     private String productImage;
@@ -19,12 +20,13 @@ public class Product {
     public Product() {
     }
 
-    public Product(int productId, String productName, String titleProduct, String productDescriptions, int catalogId, boolean productStatus, Date createDate, String productImage, List<String> listImage, List<ProductDetail> listProductDetail) {
+    public Product(int productId, String productName, String titleProduct, String productDescriptions, int catalogId, String catalogName, boolean productStatus, Date createDate, String productImage, List<String> listImage, List<ProductDetail> listProductDetail) {
         this.productId = productId;
         this.productName = productName;
         this.titleProduct = titleProduct;
         this.productDescriptions = productDescriptions;
         this.catalogId = catalogId;
+        this.catalogName = catalogName;
         this.productStatus = productStatus;
         this.createDate = createDate;
         this.productImage = productImage;
@@ -110,5 +112,13 @@ public class Product {
 
     public void setListProductDetail(List<ProductDetail> listProductDetail) {
         this.listProductDetail = listProductDetail;
+    }
+
+    public String getCatalogName() {
+        return catalogName;
+    }
+
+    public void setCatalogName(String catalogName) {
+        this.catalogName = catalogName;
     }
 }

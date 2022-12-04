@@ -46,7 +46,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 <%--<!-- wpf loader Two -->--%>
@@ -61,7 +62,8 @@
 <!-- END SCROLL TOP BUTTON -->
 
 <!-- Start header section -->
-<jsp:include page="header.jsp"/>;
+<jsp:include page="header.jsp"/>
+
 <!-- Start slider -->
 <section id="aa-slider">
     <div class="aa-slider-area">
@@ -71,19 +73,22 @@
                     <!-- single slide item -->
                     <li>
                         <div class="seq-model" style="width: 100%">
-                            <img data-seq src="<%=request.getContextPath()%>/img/ms_banner_img1.webp" alt="Men slide img"/>
+                            <img data-seq src="<%=request.getContextPath()%>/img/ms_banner_img1.webp"
+                                 alt="Men slide img"/>
                         </div>
                     </li>
                     <!-- single slide item -->
                     <li>
                         <div class="seq-model" style="width: 100%">
-                            <img data-seq src="<%=request.getContextPath()%>/img/ms_banner_img1.jpg" alt="Wristwatch slide img"/>
+                            <img data-seq src="<%=request.getContextPath()%>/img/ms_banner_img1.jpg"
+                                 alt="Wristwatch slide img"/>
                         </div>
                     </li>
                     <!-- single slide item -->
                     <li>
                         <div class="seq-model" style="width: 100%">
-                            <img data-seq src="<%=request.getContextPath()%>/img/banner3.webp" alt="Women Jeans slide img"/>
+                            <img data-seq src="<%=request.getContextPath()%>/img/banner3.webp"
+                                 alt="Women Jeans slide img"/>
                         </div>
                     </li>
                     <!-- single slide item -->
@@ -94,7 +99,8 @@
                     <!-- single slide item -->
                     <li>
                         <div class="seq-model" style="width: 100%;">
-                            <img data-seq src="<%=request.getContextPath()%>/img/banner5.webp" alt="Male Female slide img"/>
+                            <img data-seq src="<%=request.getContextPath()%>/img/banner5.webp"
+                                 alt="Male Female slide img"/>
                         </div>
                     </li>
                 </ul>
@@ -119,7 +125,8 @@
                         <div class="col-md-5 no-padding">
                             <div class="aa-promo-left">
                                 <div class="aa-promo-banner">
-                                    <img src="<%=request.getContextPath()%>/img/home_new_banner_2.webp" alt="img" style="100%">
+                                    <img src="<%=request.getContextPath()%>/img/home_new_banner_2.webp" alt="img"
+                                         style="100%">
                                     <div class="aa-prom-content">
                                         <h4><a href="#">BEST SELLER</a></h4>
                                     </div>
@@ -193,8 +200,10 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="<%=request.getContextPath()%>/views/User/product-details.jsp"><img src="<%=request.getContextPath()%>/img/man/polo-shirt-2.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img"
+                                                   href="<%=request.getContextPath()%>/views/User/product-details.jsp"><img
+                                                        src="<%=request.getContextPath()%>/img/man/polo-shirt-2.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -217,8 +226,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/man/t-shirt-1.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/man/t-shirt-1.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -240,8 +250,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/man/polo-shirt-1.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/man/polo-shirt-1.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -262,8 +273,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/man/polo-shirt-4.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/man/polo-shirt-4.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -286,8 +298,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/man/polo-shirt-5.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/man/polo-shirt-5.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -307,8 +320,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/man/polo-shirt-6.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/man/polo-shirt-6.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -329,8 +343,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/man/polo-shirt-2.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/man/polo-shirt-2.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -353,8 +368,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/man/t-shirt-1.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/man/t-shirt-1.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -374,8 +390,10 @@
                                             <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
                                         </li>
                                     </ul>
-                                    <a class="aa-browse-btn" href="<%=request.getContextPath()%>/views/User/productAll.jsp">Browse all Product <span
-                                            class="fa fa-long-arrow-right"></span></a>
+                                    <a class="aa-browse-btn"
+                                       href="<%=request.getContextPath()%>/views/User/productAll.jsp">Browse all Product
+                                        <span
+                                                class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!-- / men product category -->
                                 <!-- start women product category -->
@@ -384,8 +402,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/women/girl-1.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/women/girl-1.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -408,8 +427,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/women/girl-2.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/women/girl-2.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -431,8 +451,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/women/girl-3.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/women/girl-3.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -453,8 +474,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/women/girl-4.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/women/girl-4.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -477,8 +499,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/women/girl-5.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/women/girl-5.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -499,8 +522,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/women/girl-6.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/women/girl-6.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -521,8 +545,9 @@
                                         <!-- start single product item -->
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="<%=request.getContextPath()%>/img/women/girl-7.png"
-                                                                                        alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="#"><img
+                                                        src="<%=request.getContextPath()%>/img/women/girl-7.png"
+                                                        alt="polo shirt img"></a>
                                                 <a class="aa-add-card-btn" href="#"><span
                                                         class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
@@ -1056,7 +1081,8 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="aa-banner-area">
-                        <a href="#"><img src="<%=request.getContextPath()%>/img/hb_image1.webp" alt="fashion banner img"></a>
+                        <a href="#"><img src="<%=request.getContextPath()%>/img/hb_image1.webp"
+                                         alt="fashion banner img"></a>
                     </div>
                 </div>
             </div>
@@ -1071,7 +1097,8 @@
             <div class="col-md-12">
                 <div class="aa-latest-blog-area">
                     <h2>NEM’S BLOG</h2>
-                    <h3 style="font-size: 14px; text-align: center; line-height: 21px; margin-top: -30px" >ĐÓN ĐẦU XU HƯỚNG, ĐỊNH HÌNH PHONG CÁCH</h3>
+                    <h3 style="font-size: 14px; text-align: center; line-height: 21px; margin-top: -30px">ĐÓN ĐẦU XU
+                        HƯỚNG, ĐỊNH HÌNH PHONG CÁCH</h3>
                     <div class="row">
                         <!-- single latest blog -->
                         <div class="col-md-4 col-sm-4">
@@ -1147,7 +1174,8 @@
 </section>
 <!-- / Latest Blog -->
 
-<jsp:include page="footer.jsp"/>;
+<jsp:include page="footer.jsp"/>
+;
 
 <!-- Login Modal -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -1157,14 +1185,13 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4>Login</h4>
                 <form class="aa-login-form" action="<%=request.getContextPath()%>/UserServlet" method="post">
-                    <label for="">Username<span>*</span></label>
-                    <input type="text" placeholder="Username or email" name="userName">
-                    <label for="">Password<span>*</span></label>
-                    <input type="password" placeholder="Password" name="password">
-                    <button class="aa-browse-btn" type="submit" name="action" value="login">Login</button>
-                    <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Remember me
-                    </label>
-                    <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+                    <div>
+                        <label for="">Username<span>*</span></label>
+                        <input type="text" placeholder="Username " name="userName">
+                        <label for="">Password<span>*</span></label>
+                        <input type="password" placeholder="Password" name="password">
+                        <button class="aa-browse-btn" type="submit" name="action" value="login">Login</button>
+                    </div>
                     <div class="aa-register-now">
                         Don't have an account?<a href="views/User/register.jsp">Register now!</a>
                     </div>
@@ -1173,6 +1200,48 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div>
+<!-- Logout Modal -->
+<%--<div class="modal fade" id="logout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">--%>
+<%--    <div class="modal-dialog">--%>
+<%--        <div class="modal-content">--%>
+<%--            <div class="modal-body">--%>
+<%--                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>--%>
+<%--                <h4>Logout</h4>--%>
+<%--                <form class="aa-login-form" action="<%=request.getContextPath()%>/UserServlet" method="post">--%>
+<%--                    <div>--%>
+<%--                        <p>Are you sure to log out?</p>--%>
+<%--                        <button class="aa-browse-btn" type="submit" name="action" value="login">Login</button>--%>
+<%--                    </div>--%>
+<%--                    <div class="aa-register-now">--%>
+<%--                        Don't have an account?<a href="views/User/register.jsp">Register now!</a>--%>
+<%--                    </div>--%>
+<%--                </form>--%>
+<%--            </div>--%>
+<%--        </div><!-- /.modal-content -->--%>
+<%--    </div><!-- /.modal-dialog -->--%>
+<%--</div>--%>
+
+
+<div class="modal fade" id="logout-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Log out</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure to log out?</p>
+            </div>
+            <form class="aa-login-form" action="<%=request.getContextPath()%>/UserServlet" method="post">
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <button type="submit" class="btn btn-primary" name="action" value="logout">Yes</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

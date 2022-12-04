@@ -9,61 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
     <meta name="author" content="AdminKit">
-    <meta name="keywords"
-          content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+    <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="<%=request.getContextPath()%>/img3/icons/icon-48x48.png"/>
+    <link rel="shortcut icon" href="<%=request.getContextPath()%>/img3/icons/icon-48x48.png" />
 
-    <link rel="canonical" href="https://demo-basic.adminkit.io/"/>
-
-    <link href="<%=request.getContextPath()%>/css3/app.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <meta name="description" content="Ashion Template">
-    <meta name="keywords" content="Ashion, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="<%=request.getContextPath()%>/img3/icons/icon-48x48.png"/>
-
-    <link rel="canonical" href="https://demo-basic.adminkit.io/"/>
+    <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
     <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link href="<%=request.getContextPath()%>/css3/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css1/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css1/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css1/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css1/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css1/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css1/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css1/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css1/style.css" type="text/css">
 </head>
 
 <body>
 <div class="wrapper">
     <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
-            <a class="sidebar-brand" href="adminHome.jsp">
+            <a class="sidebar-brand" href="<%=request.getContextPath()%>/views/Admin/adminHome.jsp">
                 <span class="align-middle">AdminKit</span>
             </a>
 
@@ -71,17 +38,17 @@
                 <li class="sidebar-header">
                     Pages
                 </li>
-                <li class="sidebar-item ">
+                <li class="sidebar-item">
                     <a class="sidebar-link" href="<%=request.getContextPath()%>/views/Admin/adminHome.jsp">
                         <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Dashboard</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item ">
                     <a class="sidebar-link" href="<%=request.getContextPath()%>/CatalogServlet">
                         <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Category</span>
                     </a>
                 </li>
-                <li class="sidebar-item ">
+                <li class="sidebar-item">
                     <a class="sidebar-link" href="<%=request.getContextPath()%>/SizeServlet">
                         <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Size</span>
                     </a>
@@ -101,6 +68,7 @@
                         <i class="align-middle" data-feather="user"></i> <span class="align-middle">User</span>
                     </a>
                 </li>
+
             </ul>
         </div>
     </nav>
@@ -279,8 +247,9 @@
                             <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i>
                                 Analytics</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="adminHome.jsp"><i class="align-middle me-1"
-                                                                             data-feather="settings"></i> Settings &
+                            <a class="dropdown-item" href="<%=request.getContextPath()%>/views/Admin/adminHome.jsp"><i
+                                    class="align-middle me-1"
+                                    data-feather="settings"></i> Settings &
                                 Privacy</a>
                             <a class="dropdown-item" href="#"><i class="align-middle me-1"
                                                                  data-feather="help-circle"></i> Help Center</a>
@@ -292,254 +261,116 @@
             </div>
         </nav>
 
-        <main class="content">
-            <!-- Product Details Section Begin -->
-            <section class="product-details spad">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="product__details__pic">
-                                <div class="product__details__pic__left product__thumb nice-scroll">
-                                    <c:forEach items="${pro.listImage}" var="imageLink">
-                                        <img src="<%=request.getContextPath()%>/imagesPro/${imageLink}" alt="">
-                                    </c:forEach>
-                                </div>
-                                <div class="product__details__slider__content">
-                                    <div class="product__details__pic__slider owl-carousel">
-                                        <img src="<%=request.getContextPath()%>/imagesPro/${pro.productImage}" alt="">
-                                        <%--                                        <c:forEach items="${pro.listImage}" var="imageLink">--%>
-                                        <%--                                            <img src="<%=request.getContextPath()%>/imagesPro/${imageLink}" alt="">--%>
-                                        <%--                                        </c:forEach>--%>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <input type="hidden" name="productId" value="${pro.productId}">
-                            <div class="input-group mb-3">
-                                    <span class="input-group-text" id="productName"><i
+        <div class="content">
+            <div class="container-fluid p-0">
+                <form action="<%=request.getContextPath()%>/ProductServlet?action=Update&&productId=${pro.productId}"
+                      method="post" enctype="multipart/form-data">
+                    <div class="card">
+                        <!-- /.card-header -->
+                        <div style="display: inline-flex; align-items: center">
+                            <div style="width: 45%; margin-top: 20px; margin-left:  20px ;">
+                                <input type="hidden" name="productId" value="${pro.productId}">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="newProductName"><i
                                             class="bi bi-pencil"></i></span>
-                                <input style="" type="text" name="productName" class="form-control"
-                                       value="${pro.productName}"
-                                       aria-label="Sizing example input"
-                                       aria-describedby="inputCatalogName" readonly>
-                            </div>
-                            <div class="input-group mb-3">
-                                    <span class="input-group-text" id="productTitle"><i
+                                    <input style="" type="text" name="newProductName" class="form-control"
+                                           placeholder="Product name..."
+                                           aria-label="Sizing example input"
+                                           aria-describedby="inputCatalogName" value="${pro.productName}">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="idParent"><i
+                                            class="bi bi-list-check"></i></label>
+                                    <select class="form-select" name="newCatalogParent" id="idParent">
+                                        <option value="${cat.catalogId}" selected>${pro.catalogName}</option>
+                                        <c:forEach items="${listCatalog}" var="cat">
+                                            <option value="${cat.catalogId}">${cat.catalogName}</option>
+                                        </c:forEach>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="newProductTitle"><i
                                             class="bi bi-tags"></i></span>
-                                <input style="" type="text" name="productTitle" class="form-control"
-                                       value="${pro.titleProduct}"
-                                       aria-label="Sizing example input"
-                                       aria-describedby="inputCatalogName" readonly>
+                                    <input style="" type="text" name="newProductTitle" class="form-control"
+                                           placeholder="Product Title..."
+                                           aria-label="Sizing example input"
+                                           aria-describedby="inputCatalogName" value="${pro.titleProduct}">
+                                </div>
                             </div>
-                            <div class="input-group mb-3">
-                                    <span class="input-group-text" id="productDescription"><i
-                                            class="bi bi-tags"></i></span>
-                                <input style="" type="text" name="productDescription" class="form-control"
-                                       value="${pro.productDescriptions}"
-                                       aria-label="Sizing example input"
-                                       aria-describedby="inputCatalogName" readonly>
-                            </div>
-                            <div class="input-group mb-3">
-                                    <span class="input-group-text" id="productCatPa"><i
-                                            class="bi bi-tags"></i></span>
-                                <input style="" type="text" name="productCatPa" class="form-control"
-                                       value="${pro.catalogName}"
-                                       aria-label="Sizing example input"
-                                       aria-describedby="inputCatalogName" readonly>
-                            </div>
-                            <div class="input-group mb-3">
+                            <div style=" width: 45%; margin-top: 20px; margin-left:  65px; ">
+                                <div class="input-group mb-3">
                                 <span class="input-group-text" id="createdDate"><i
                                         class="bi bi-calendar2-check"></i></span>
-                                <input style="" type="text" name="createdDate" class="form-control"
-                                       aria-label="Sizing example input"
-                                       aria-describedby="inputCatalogName" value="${pro.createDate}" readonly>
+                                    <input style="" type="date" name="createdDate" class="form-control"
+                                           aria-label="Sizing example input"
+                                           aria-describedby="inputCatalogName" value="${pro.createDate}">
+                                </div>
+                                <div class="input-group mb-3">
+                                                    <span class="input-group-text"
+                                                          id="catalogStatus">Trạng thái danh mục</span>
+                                </div>
+                                <div>
+                                    <c:choose>
+                                        <c:when test="${pro.productStatus}">
+                                            <input type="radio" name="proStatus" id="active" value="true" checked/>
+                                            <label for="active">Hoạt động</label>
+                                            <input type="radio" name="proStatus" id="inactive" value="false"/>
+                                            <label for="inactive">Không hoạt động</label>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <input type="radio" name="proStatus" id="active" value="true"/>
+                                            <label for="active">Hoạt động</label>
+                                            <input type="radio" name="proStatus" id="inactive" value="false" checked/>
+                                            <label for="inactive">Không hoạt động</label>
+                                        </c:otherwise>
+                                    </c:choose>
+                                </div>
                             </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="proStatus"><i
-                                        class="bi bi-calendar2-check"></i></span>
-                                <input style="" type="text" name="proStatus" class="form-control"
-                                       aria-label="Sizing example input"
-                                       aria-describedby="inputCatalogName"
-                                       value="${pro.productStatus?"Hoạt động":"Không hoạt động"}" readonly>
                             </div>
-                            <a href="<%=request.getContextPath()%>/ProductServlet?action=updatePro&&productId=${pro.productId}">
-                                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                        data-bs-target="#updateProModal"
-                                        data-bs-whatever="${pro.productId}" id="updateProMainInfo">Update
-                                </button>
-                            </a>
                         </div>
+                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Ảnh chính</span>
                     </div>
-                </div>
-            </section>
-            <!-- Product Details Section End -->
-            <div class="content">
-                <div class="classifiedList">
-                    <div class="container-fluid" style="width: 40%; margin-right: 30px; margin-bottom: 10px">
-                        <form class="d-flex" role="search" action="<%=request.getContextPath()%>/ProductServlet">
-                            <input type="hidden" id="productSearchId" name="productSearchId" value="${pro.productId}">
-                            <input class="form-control me-2 fst-italic" type="text"
-                                   placeholder="Enter size name or color name... "
-                                   aria-label="Search" name="searchName">
-                            <input class="btn btn-outline-success" type="submit" value="SearchDetail" name="action"/>
-                        </form>
+                    <div style="margin-left: 10px">
+                        <img src="<%=request.getContextPath()%>/imagesPro/${pro.productImage}" alt="">
                     </div>
-                    <div>
-                        <table class="table ">
-                            <tr>
-                                <th>Color</th>
-                                <th>Size</th>
-                                <th>Giá nhập</th>
-                                <th>Giá xuất</th>
-                                <th>Số lượng</th>
-                                <th colspan="2">Action</th>
-                            </tr>
-                            <c:forEach items="${pro.listProductDetail}" var="detail">
-                                <tr>
-                                    <td>${detail.color.colorName}</td>
-                                    <td>${detail.size.sizeName}</td>
-                                    <td>${detail.importPrice}</td>
-                                    <td>${detail.exportPrice}</td>
-                                    <td>${detail.quantity}</td>
-                                    <td>
-                                        <input type="hidden" id="productId" value="${pro.productId}">
-                                        <input type="hidden" id="productDetailId" value="${detail.productDetailId}">
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                                data-bs-target="#updateDetailProModal"
-                                                data-bs-whatever="${detail.productDetailId}" id="updateProDetail">Update
-                                        </button>
-                                            <%---------------------------------modal update-------------------------------%>
-                                        <div class="modal fade" id="updateDetailProModal" tabindex="-1"
-                                             aria-labelledby="updateDetailProLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="updateDetailProLabel">Update
-                                                            Product Detail</h5>
-                                                        <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal"
-                                                                aria-label="Close"></button>
-                                                    </div>
-                                                    <form action="<%=request.getContextPath()%>/ProductServlet"
-                                                          method="post">
-                                                        <div class="modal-body">
-                                                            <div class="input-group mb-3">
-                                                                <input type="hidden" class="form-control"
-                                                                       aria-label="sizeName"
-                                                                       aria-describedby="basic-addon1"
-                                                                       name="proDetailIdUpdate" id="proDetailIdUpdate">
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                                <span class="input-group-text">Color</span>
-                                                                <input type="text" class="form-control"
-                                                                       aria-label="catalogName"
-                                                                       aria-describedby="basic-addon1"
-                                                                       name="colorDetailPro" id="colorProUpdate"
-                                                                       readonly>
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                                <span class="input-group-text">Size</span>
-                                                                <input type="text" class="form-control"
-                                                                       aria-label="catalogName"
-                                                                       aria-describedby="basic-addon1"
-                                                                       name="sizeDetailPro" id="sizeProUpdate"
-                                                                       readonly>
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                    <span class="input-group-text"
-                                                    >Giá nhập</span>
-                                                                <input type="number" class="form-control"
-                                                                       placeholder="Nhập giá nhập"
-                                                                       aria-label="catalogDescription"
-                                                                       aria-describedby="basic-addon2"
-                                                                       name="importPricePro" id="importPriceUpdate">
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                    <span class="input-group-text"
-                                                    >Giá xuất</span>
-                                                                <input type="number" class="form-control"
-                                                                       placeholder="Nhập giá nhập"
-                                                                       aria-label="catalogDescription"
-                                                                       aria-describedby="basic-addon2"
-                                                                       name="exportPricePro" id="exportPriceUpdate">
-                                                            </div>
-                                                            <div class="input-group mb-3">
-                                                    <span class="input-group-text"
-                                                    >Số lượng</span>
-                                                                <input type="number" class="form-control"
-                                                                       placeholder="Nhập số lượng"
-                                                                       aria-label="catalogDescription"
-                                                                       aria-describedby="basic-addon2"
-                                                                       name="quantityPro" id="quantityUpdate">
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                        data-bs-dismiss="modal">
-                                                                    Close
-                                                                </button>
-                                                                <input type="submit" name="action" value="Update"
-                                                                       class="btn btn-primary"/>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                            <%---------------------------modal delete---------------------------------%>
-                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal" id="deleteProDetail"
-                                                data-bs-whatever1="${detail.color.colorName}"
-                                                data-bs-whatever2="${detail.size.sizeName}">Delete
-                                        </button>
-                                        <div class="modal fade" id="exampleModal" tabindex="-1"
-                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">New
-                                                            message</h5>
-                                                        <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal"
-                                                                aria-label="Close"></button>
-                                                    </div>
-                                                    <form action="<%=request.getContextPath()%>/ProductServlet">
-                                                        <div class="modal-body">
-                                                            <div class="mb-3">
-                                                                <input type="text" class="form-control"
-                                                                       id="recipient-name" readonly>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close
-                                                            </button>
-                                                            <input type="submit" class="btn btn-danger"
-                                                                   value="Delete"
-                                                                   name="action"/>
-                                                            <input type="hidden" name="proDelId" id="proDelId">
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                            <%--                                            -----------------------end modal delete-------------------%>
-                                    </td>
-                                </tr>
-                            </c:forEach>
-                        </table>
-
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#updateProModal"
-                                data-bs-whatever="${pro.productId}" id=""> Add new color, size
-                        </button>
-
+                    <div class="input-group mb-3" style="margin-top: 10px">
+                        <span class="input-group-text">Ảnh phụ</span>
                     </div>
-                </div>
+                    <div style="margin-left: 10px" >
+                        <c:forEach items="${pro.listImage}" var="imageLink">
+                            <img src="<%=request.getContextPath()%>/imagesPro/${imageLink}" alt="" style="width: 200px; height: 200px; display: inline-flex">
+                        </c:forEach>
+                    </div>
+                    <div style="margin-left: 10px; margin-top: 20px">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="file1"><i class="bi bi-images"></i> Update Ảnh chính</span>
+                        <input style="" type="file" name="productImg" class="form-control"
+                               aria-label="Sizing example input"
+                               aria-describedby="inputCatalogName">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="file"><i class="bi bi-images"></i>Update Ảnh phụ</span>
+                        <input style="" type="file" name="subImg" class="form-control"
+                               aria-label="Sizing example input"
+                               aria-describedby="inputCatalogName" multiple>
+                    </div>
+                    </div>
+                        <div style=" border-radius: 5px; margin: 10px ">
+                            <textarea name="description" id="description" style="width: 100%"></textarea>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="">
+                                <div class="container-fluid">
+                                    <button type="submit" class="btn btn-primary" > Update Product</button>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+            </div>
+                </form>
             </div>
         </main>
-
 
         <footer class="footer">
             <div class="container-fluid">
@@ -573,8 +404,8 @@
     </div>
 </div>
 
-
 <script src="<%=request.getContextPath()%>/js3/app.js"></script>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
@@ -799,36 +630,22 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script type="text/javascript">
-    $(document).on('click', 'table #deleteProDetail', function () {
-        let proDetailId = $(this).parent().find('#proDetail').val();
-        $('#proDelId').val(proDetailId);
+    $(document).on('click', 'table #deleteCat', function () {
+        let catId = $(this).parent().find('#catDeleteId').val();
+        $('#catDelId').val(catId);
     });
-    $(document).on('click', 'table #updateProDetail', function () {
-        let productId = $(this).parent().find('#productId').val();
-        let productDetailId = $(this).parent().find('#productDetailId').val();
+    $(document).on('click', 'table #updateCat',function () {
+        let catId = $(this).parent().find('#catDeleteId').val();
         $.ajax({
-            type: 'GET',
-            url: '${pageContext.request.contextPath}/ProductServlet?action=GetProductDetail&&proId=' + productId + "&&pDetailId=" + productDetailId,
-            success: function (pdUpdate) {
-                console.log(pdUpdate)
-                let id = pdUpdate.productDetailId.toString();
-                console.log(id)
-                $('#proDetailIdUpdate').val(id);
-                let color = pdUpdate.color.colorName.toString();
-                console.log(color)
-                $('#colorProUpdate').val(color);
-                let size = pdUpdate.size.sizeName.toString();
-                console.log(size)
-                $('#sizeProUpdate').val(size);
-                let imPrice = pdUpdate.importPrice.toString();
-                console.log(imPrice)
-                $('#importPriceUpdate').val(imPrice);
-                let exPrice = pdUpdate.exportPrice.toString();
-                console.log(exPrice)
-                $('#exportPriceUpdate').val(exPrice);
-                let quan = pdUpdate.quantity.toString();
-                console.log(quan)
-                $('#quantityUpdate').val(quan);
+            type:'GET',
+            url : '${pageContext.request.contextPath}/CatalogServlet?action=GetById&&catalogId='+catId,
+            success:function (catalogUpdate){
+                $('#catalogIdUpdate').val(catalogUpdate.catalogId);
+                $('#catalogNameUpdate').val(catalogUpdate.catalogName);
+                $('#catalogDescriptionUpdate').val(catalogUpdate.catalogDescriptions);
+                $('#catalogParentUpdate').val(catalogUpdate.catalogParents);
+                let status = catalogUpdate.catalogStatus.toString();
+                $('#catalogStatusUpdate').val(status);
             }
         });
     });
@@ -840,8 +657,7 @@
         // Button that triggered the modal
         var button = event.relatedTarget
         // Extract info from data-bs-* attributes
-        var recipient = button.getAttribute('data-bs-whatever1')
-        var recipient2 = button.getAttribute('data-bs-whatever2')
+        var recipient = button.getAttribute('data-bs-whatever')
         // If necessary, you could initiate an AJAX request here
         // and then do the updating in a callback.
         //
@@ -849,25 +665,14 @@
         var modalTitle = exampleModal.querySelector('.modal-title')
         var modalBodyInput = exampleModal.querySelector('.modal-body input')
 
-        modalTitle.textContent = 'Xóa màu ' + recipient + ', size ' + recipient2
-        modalBodyInput.value = 'Bạn chắc chắn muốn xóa màu ' + recipient + ', size ' + recipient2 + '?'
+        modalTitle.textContent = 'Xóa ' + recipient
+        modalBodyInput.value = 'Bạn chắc chắn muốn xóa danh mục ' + recipient + '?'
     })
 </script>
-
-<script src="<%=request.getContextPath()%>/js1/jquery-3.3.1.min.js"></script>
-<script src="<%=request.getContextPath()%>/js1/bootstrap.min.js"></script>
-<script src="<%=request.getContextPath()%>/js1/jquery.magnific-popup.min.js"></script>
-<script src="<%=request.getContextPath()%>/js1/jquery-ui.min.js"></script>
-<script src="<%=request.getContextPath()%>/js1/mixitup.min.js"></script>
-<script src="<%=request.getContextPath()%>/js1/jquery.countdown.min.js"></script>
-<script src="<%=request.getContextPath()%>/js1/jquery.slicknav.js"></script>
-<script src="<%=request.getContextPath()%>/js1/owl.carousel.min.js"></script>
-<script src="<%=request.getContextPath()%>/js1/jquery.nicescroll.min.js"></script>
-<script src="<%=request.getContextPath()%>/js1/main.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    CKEDITOR.replace('description')
+</script>
 </body>
 
 </html>

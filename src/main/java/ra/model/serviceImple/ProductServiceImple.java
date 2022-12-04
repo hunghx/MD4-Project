@@ -27,6 +27,16 @@ public class ProductServiceImple implements IProductService<Product,Integer> {
     }
 
     @Override
+    public boolean updateProDuctDetail(ProductDetail pdetail) {
+        return productDAO.updateProDuctDetail(pdetail);
+    }
+
+    @Override
+    public Product searchProductDetail(int id, String name) {
+        return productDAO.searchProductDetail(id,name);
+    }
+
+    @Override
     public List<Product> getAll() {
         return productDAO.getAll();
     }
@@ -50,4 +60,6 @@ public class ProductServiceImple implements IProductService<Product,Integer> {
     public Product getById(Integer id) {
         return productDAO.getById(id);
     }
+
+
 }

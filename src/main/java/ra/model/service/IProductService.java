@@ -9,4 +9,6 @@ public interface IProductService<T,V> extends IShopService<Product,Integer> {
     List<T> searchByName(String searchName);
     boolean insertProductDetail(int proId, List<ProductDetail> list);
     int getLatestId();
+    boolean updateProDuctDetail( ProductDetail pdetail);
+    T searchProductDetail(int id, String name);
 }
